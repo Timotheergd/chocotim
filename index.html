@@ -19,7 +19,7 @@
         }
         
         header {
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -200,7 +200,15 @@
         @media (max-width: 900px) {
             .chocolate-container {
                 flex-direction: column;
+                gap: 1rem;
             }
+
+            .chocolate-info {
+                padding: 1.5rem;
+                border-left: none !important;
+                border-top: 4px solid #d4af37;
+            }
+
             .even-section .chocolate-container {
                 flex-direction: column;
             }
@@ -209,12 +217,65 @@
                 grid-template-columns: 1fr;
             }
             
+            header {
+                padding: 1rem;
+            }
+            
             h1 {
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
             
             h2 {
+                font-size: 1.8rem;
+            }
+            
+            p {
+                font-size: 1.1rem;
+            }
+            
+            .recap-item {
+                padding: 0.8rem;
+            }
+            
+            .recap-info h3 {
+                font-size: 1.1rem;
+            }
+            
+            .recap-info p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
                 font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            .chef-img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .chocolate-img img {
+                max-height: 250px;
+                object-fit: cover;
+            }
+            
+            .recap-grid {
+                gap: 1rem;
+            }
+            
+            .recap-img {
+                width: 60px;
+                height: 60px;
             }
         }
 
@@ -392,7 +453,7 @@
             <h2>Maître Chocolatier Timothée Regaud</h2>
             <p id="counter1">Avec plus de <span class="days"></span> jours d'expérience dans la création de chocolats fins, le Chef Timothée allie tradition et innovation pour créer des expériences chocolatées inoubliables. Formé à Toulouse, ses créations mêlent les meilleurs ingrédients du monde entier pour ravir les palais les plus exigeants.</p>
         </div>
-        <div class="scroll-down">Défilez pour explorer ↓</div>
+        <!-- <div class="scroll-down">Défilez pour explorer ↓</div> -->
     </header>
 
     <div class="chocolate-section">
